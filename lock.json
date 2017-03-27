@@ -1,0 +1,13 @@
+{
+    "memo": "7811a491797c942f71b0e01a0bd0f7adab74ef4b896ef3dbc0852862ff080f65",
+    "projects": [
+        {
+            "name": "github.com/VojtechVitek/go-trello",
+            "branch": "master",
+            "revision": "28ebf2756ecc6c69262fba5d5c2f80c0e6dce5e8",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
