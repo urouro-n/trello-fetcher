@@ -1,10 +1,18 @@
 {
-    "memo": "7811a491797c942f71b0e01a0bd0f7adab74ef4b896ef3dbc0852862ff080f65",
+    "memo": "0c799c92df9bd3307b5260041ac95f2ef07dc08ba5f9e395ea92973472c34e58",
     "projects": [
         {
             "name": "github.com/VojtechVitek/go-trello",
             "branch": "master",
             "revision": "28ebf2756ecc6c69262fba5d5c2f80c0e6dce5e8",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/urfave/cli",
+            "version": "v1.19.1",
+            "revision": "0bdeddeeb0f650497d603c4ad7b20cfe685682f6",
             "packages": [
                 "."
             ]
