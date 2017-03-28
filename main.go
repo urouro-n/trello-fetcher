@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/VojtechVitek/go-trello"
+	"github.com/fatih/color"
 	"github.com/urfave/cli"
 	"log"
 	"os"
@@ -57,7 +58,8 @@ func current(c *cli.Context) error {
 				cards, _ := l.Cards()
 				for _, c := range cards {
 					if section == false {
-						fmt.Println(b.Name)
+						cl := color.New(color.FgCyan).Add(color.Bold)
+						cl.Println(b.Name)
 						section = true
 					}
 
