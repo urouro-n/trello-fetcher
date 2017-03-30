@@ -9,9 +9,12 @@ import (
 	"os"
 )
 
+const Version = "0.0.1"
+
 func main() {
 	app := cli.NewApp()
 	app.Name = "trello-fetcher"
+	app.Version = Version
 	app.Usage = ""
 	app.Action = current
 
