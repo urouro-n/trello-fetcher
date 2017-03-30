@@ -16,6 +16,13 @@ func main() {
 	app.Name = "trello-fetcher"
 	app.Version = Version
 	app.Usage = ""
+	app.Flags = []cli.Flag{
+		cli.StringFlag{
+			Name:  "list, l",
+			Value: "Do",
+			Usage: "List name to extract",
+		},
+	}
 	app.Action = current
 
 	app.Run(os.Args)
@@ -56,7 +63,7 @@ func current(c *cli.Context) error {
 		for _, l := range lists {
 			section := false
 
-			if l.Name == "Do" {
+			if l.Name == c.String("list") {
 
 				cards, _ := l.Cards()
 				for _, c := range cards {
